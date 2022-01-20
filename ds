@@ -1,0 +1,60 @@
+# ANKU
+data structure code
+Write a program to create a queue of size N specified by the user. Then you will be given a K value representing the number of elements to be inserted into the queue. After giving K no. of elements you will be given a P value. Then you have to delete the P no. of elements in the queue. After completion of entire process print the element from current starting position to ending position.
+Write a program to create a queue of size N specified by the user. Then you will be given a K value representing the number of elements to be inserted into the queue. After giving K no. of elements you will be include <cmath>
+#include<cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+    queue<int>q;
+
+    int n;
+
+    cin>>n;
+
+    int k;
+
+    cin>>k;
+
+    int x;
+
+    while(k--)
+
+    {
+
+        cin>>x;
+
+        q.push(x);
+
+    }
+
+    int p;
+
+    cin>>p;
+
+    while(p--)
+
+        q.pop();
+
+    
+
+    while(!q.empty())
+
+    {
+
+        cout<<q.front()<<" ";
+
+        q.pop();
+
+    }
+
+    return 0;
+
+}
